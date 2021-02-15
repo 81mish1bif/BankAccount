@@ -8,14 +8,11 @@ public class Konto implements IKonto {
 	
 	public Konto(double kontoNummer, String KontoInhaber, double kontoStand) {
 		this.KontoNummer = kontoNummer;
-		this.kontoInhaber = kontoInhaber;
-		this.kontoStand = kontoNummer;
+		this.kontoInhaber= kontoInhaber;
+		this.kontoStand = kontoStand;
 	}
 	
-   public String toString() {
-	   
-	   return "Konto Nummer:" + "\t" + this.KontoNummer + "Konto Inhaber:" + "\t" + this.kontoInhaber + "KontoStand:" + "\t" + this.kontoStand ;
-   }
+  
 
 @Override
 public double ueberweisung(double aktuellSt) {
@@ -34,5 +31,8 @@ public double guthaben() {
 	// TODO Auto-generated method stub
 	return 0;
 }
-
+public String toString() {
+	   
+	   return "Konto Nummer:" + "\t" + this.KontoNummer + "Konto Inhaber:" + "\t" + this.kontoInhaber + "KontoStand:" + "\t" + this.kontoStand ;
+}
 }
